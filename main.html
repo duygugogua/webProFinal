@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+      .button {
+        background-color: #00bfff; /* Green */
+        border: none;
+        color: white;
+        padding: 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+
+      .button3 {
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header başlangıç-->
+
+    <!--header bitiş-->
+    <div class="container-fluid" style="text-align: center; padding: 0px">
+      <!--üst resim başlangıç-->
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/tr/5/5e/ERU_Logo.jpg"
+        style="width: 60px; height: auto"
+        alt="alternatetext"
+      />
+      <!--üst resim bitiş-->
+      <h2>
+        Erciyes Üniversitesi Bilgisayar Mühendisliği Web Programlama 1 dersi
+        final sorusu
+      </h2>
+      <h3>Dr.Öğr.Üyresi Fehim Köylü</h3>
+      <h2>Alışveris Uygulaması</h2>
+      <h6>
+        Vermek istediğiniz siparişler için aşağıdaki seçenek adedini belirtiniz
+      </h6>
+      <!--ortadaki menülerin olduğu kısım başlangıç-->
+      <br />
+      <div
+        style="
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          width: 60%;
+        "
+      >
+        <div class="container-fluid" style="text-align: center; padding: 5px">
+          <div class="row">
+            <div class="col-md-4" style="padding: 5px">
+              <!--örnek menü başlangıç-->
+              <div class="panel panel-default">
+                <div class="panel-heading" style="text-align: left">
+                  <h3 style="font-size: 15px; text-align: center; margin: 0px">
+                    Ekmek
+                  </h3>
+                </div>
+
+                <div
+                  class="panel-body"
+                  style="text-align: left; text-align: center"
+                >
+                  <ul
+                    style="
+                      list-style-type: none;
+                      padding-left: 0px;
+                      margin: 0px;
+                    "
+                  >
+                    <li style="font-size: 30px">
+                      2€ <span style="color: gray">/ adet</span>
+                    </li>
+                    <li style="font-size: 10px">Somun Ekmek</li>
+                    <li style="font-size: 10px">200 gr</li>
+                    <li><button class="button button3"  onclick="sepeteEkle(event)">Sepete Ekle</button></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--örnek menü bitiş-->
+            </div>
+
+            <div class="col-md-4" style="padding: 5px">
+              <!--örnek menü başlangıç-->
+              <div class="panel panel-default">
+                <div class="panel-heading" style="text-align: left">
+                  <h3 style="font-size: 15px; text-align: center; margin: 0px">
+                    Çikolata
+                  </h3>
+                </div>
+
+                <div
+                  class="panel-body"
+                  style="text-align: left; text-align: center"
+                >
+                  <ul
+                    style="
+                      list-style-type: none;
+                      padding-left: 0px;
+                      margin: 0px;
+                    "
+                  >
+                    <li style="font-size: 30px">
+                      5€ <span style="color: gray">/ adet</span>
+                    </li>
+                    <li style="font-size: 10px">Bitter Çikolata</li>
+                    <li style="font-size: 10px">60 gr</li>
+                    <li><button class="button button3"  onclick="sepeteEkle(event)">Sepete Ekle</button></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--örnek menü bitiş-->
+            </div>
+
+            <div class="col-md-4" style="padding: 5px">
+              <!--örnek menü başlangıç-->
+              <div class="panel panel-default">
+                <div class="panel-heading" style="text-align: left">
+                  <h3 style="font-size: 15px; text-align: center; margin: 0px">
+                    Domates
+                  </h3>
+                </div>
+
+                <div
+                  class="panel-body"
+                  style="text-align: left; text-align: center"
+                >
+                  <ul
+                    style="
+                      list-style-type: none;
+                      padding-left: 0px;
+                      margin: 0px;
+                    "
+                  >
+                    <li style="font-size: 30px">
+                      6€ <span style="color: gray">/ kg</span>
+                    </li>
+                    <li style="font-size: 10px">Domates</li>
+                    <li style="font-size: 10px">Antalya Sera</li>
+                    <li>
+                      <button class="button button3" onclick="sepeteEkle(event)">
+                        Sepete Ekle
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--örnek menü bitiş-->
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default col-md-4">
+
+
+            <div
+              class="panel-body"
+              style="text-align: left; "
+            >
+              <ul id="urunler"
+                style="
+                  list-style-type: none;
+                  padding-left: 0px;
+                  margin: 0px;
+                "
+              >
+              <li id="ekmek" style="font-size: 10px">Somun ekmek   </li>
+                <li id="domates" style="font-size: 10px">Domates </li>
+                <li id="cikolata" style="font-size: 10px">Çikolata</li>
+             </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--ortadaki menülerin olduğu kısım bitiş<-->
+    <!--footer başlangıç-->
+
+    <!--footer bitiş-->
+    <script>
+      function sepeteEkle(event) {
+         var urun=event.path[2].children[1].innerText;
+         console.log(urun);
+        if(urun=="Somun Ekmek"){
+
+
+document.getElementById("ekmek").style.backgroundColor="#000";
+
+        }else if(urun=="Domates"){
+            document.getElementById("domates").style.backgroundColor="#000";
+        }
+        else if(urun=="Bitter Çikolata"){
+            document.getElementById("cikolata").style.backgroundColor="#000";
+        }
+        document.getElementById("urunler")
+      }
+    </script>
+  </body>
+</html>
